@@ -7,9 +7,10 @@
         button(class="absolute right-6 bg-orange-600 w-24 h-11 rounded-3xl text-white font-medium" @click="addTask") ADD
   
       ul(v-if="allTask.length>0" class="w-full pl-6 pr-6")
-          li(v-for="(task) in allTask" :key="allTask.id" class="pl-4 capitalize font-medium text-gray-500")
-            | {{task.title}}
-            button(class="rounded-full w-10 h-10" @click="removeTask(task.id)") x
+        li(v-for="(task) in allTask" :key="task.id" class="flex items-center justify-between pl-4 capitalize font-medium text-gray-500 mb-2")
+          span {{task.title}}
+          button(class="rounded-full w-6 h-6 bg-orange-600 text-white" @click="removeTask(task.id)") x
+
 
 </template>
 
