@@ -1,4 +1,8 @@
-{
+{"vueCompilerOptions": {
+  "plugins": [
+    "@vue/language-plugin-pug"
+  ]
+},
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",

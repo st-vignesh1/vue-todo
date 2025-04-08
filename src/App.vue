@@ -1,14 +1,15 @@
-<template>
-  <HelloWorld msg="Welcome to Your Vue.js App" class="w-full bg-black/5" />
+<template lang="pug">
+  div
+    TodoApp(msg="To-Do List")
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import TodoApp from "./components/TodoApp.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    TodoApp,
   },
 };
 </script>
